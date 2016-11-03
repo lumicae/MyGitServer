@@ -1,0 +1,138 @@
+.taskWrap{
+	width:100%;
+	height:100%;
+	overflow:auto;
+}
+.taskTab{
+	height: 30px;
+    background-color: #ddd;
+    width: 1035px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    border-bottom: 4px solid red;
+}
+.taskTab a{
+	cursor: pointer;
+    width: 210px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 7px 7px 0px 0px;
+    background-color: orange;
+}
+.taskTab a.clk {
+    background-color: red;
+}
+a, span{
+	font-family:microsoft yahei;
+	font-size:18px;
+	text-align:center;
+}
+ul,li{
+	padding:0px;
+	margin:0px;
+}
+ul li{
+	list-style:none;
+}
+.rightWrap{
+	width:100%;
+	height:100%;
+}
+#addTask, .listBtn{
+	background-color:#ddd;
+	width:150px;
+	display:inline-block;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 10px;
+}
+.listBtn{
+	margin-top:20px;
+}
+.addUl li{
+	height:50px;
+	line-height:60px;
+}
+.addUl li input{
+	height: 30px;
+    line-height: 30px;
+    font-size:18px;
+    margin-left:20px;
+}
+.addUl li input[type=text]{
+	width:600px;
+}
+.addUl .btnLi:last-child input{
+	margin-left:104px;
+}
+.addUl li span{
+	width:190px;
+	display:inline-block;
+}
+.addUl li.kwdLi input{
+	vertical-align:middle;
+}
+
+.addUl li.kwdLi label{
+	display:inline-block;
+	line-height:25px;
+	text-align:center;
+	vertical-align:middle;
+}
+.listWrap{
+	width:1035px;
+}
+.kwdUl li span:last-child input{
+	font-size: 18px;
+	margin-top:7px;
+}
+.kwdUl li{
+	height:40px;
+	line-height:40px;
+	border-bottom:1px solid #ddd;
+	width:1350px;
+}
+.kwdUl li span{
+	display:inline-block;
+	text-overflow: ellipsis;
+    height: 40px;
+    overflow: hidden;
+}
+.kwdUl li .url{
+	width:400px;
+}
+.kwdUl li .name{
+	width:350px;
+}
+.kwdUl li .index{
+	width:50px;
+}
+.kwdUl li .keys{
+	width:200px;
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.kwdUl li .time{
+	width:120px;
+}
+.kwdUl li .opt{
+	width:60px;
+}
+.kwdUl li .status{
+	width:80px;
+}
+.kwdUl li span{
+	display:inline-block;
+	width:107px;
+}
+#pageDiv{
+	margin-top:20px;
+    width: 1035px;
+	text-align:center;
+}
+#pageDiv a{
+	text-decoration:none;
+	color: #000;
+    margin-left: 5px;
+}

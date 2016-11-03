@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:p="http://www.springframework.org/schema/p" 
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:mvc="http://www.springframework.org/schema/mvc"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   					   http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+	   					   http://www.springframework.org/schema/context
+	   					   http://www.springframework.org/schema/context/spring-context-3.1.xsd
+	   					   http://www.springframework.org/schema/mvc
+	   					   http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd"> 
+
+	<!-- 采用默认方式配置Spring MVC的注解映射驱动 -->
+	<mvc:annotation-driven/>
+	
+	<!-- 资源检查器，分离动态资源 -->
+	<mvc:default-servlet-handler/>
+	
+	<!-- 类包扫描（SRC下的类包），注册带有@Controller等注解的类成为spring的bean -->
+	<context:component-scan base-package="mvc.keyword"/>
+	
+	<!-- 配置试图解释类 -->
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+	 	<property name="prefix" value="/WEB-INF/pages/keyword/"/>
+	 	<property name="suffix" value=".jsp"/>
+	</bean>
+	<bean id="restTemplate" class="org.springframework.web.client.RestTemplate"></bean>
+	
+	<!-- 国际化信息——显示错误提示信息 -->
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+	
+	<!-- 通过基名指定一组资源 -->
+		<property name="basenames">
+			<list>
+				<value>i18n/userRegisterError_zh_CN.properties</value>
+			</list>
+		</property>
+	</bean>
+</beans> 

@@ -1,0 +1,71 @@
+@CHARSET "UTF-8";
+body,div,span,ul,li,p,h,em,i,a,select,option,img{
+	margin:0;
+	padding:0;
+	font-family:Microsoft yahei;
+	text-decoration:none;
+	list-style:none;
+}
+span,em,i,a,select,opiton,img{
+	display:inline-block;
+}
+body{
+	overflow:hidden;
+}
+.title{
+	height:110px;
+	background-color: #0569D9;
+	color: #fff;
+}
+.titleImg{
+	width:104px;
+}
+.titleText{
+	height:100px;
+	width:430px;
+	display:inline-block;
+	overflow:hidden;
+}
+.titleCh{
+	height:50px;
+	line-height:50px;
+	font-size:25px;
+}
+.titleEn{
+	height:50px;
+	line-height:50px;
+	font-size:25px;
+	word-break:break-all;
+	white-space:nowrap;
+}
+.left{
+    width: 15%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    background-color: #1E90FF;
+}
+.right{
+    height: 100%;
+    width: calc(85% - 10px);
+    background-color: #eee;
+    display: inline-block;
+    float: right;
+    padding-left: 10px;
+    overflow: hidden;
+}
+.leftWrap{
+    font-size: 19px;
+    margin: auto;
+    width: 100PX;
+    line-height: 50px;
+    margin-top:30px;
+}
+.leftWrap ul li a{
+	cursor:pointer;
+    color: #fff;
+}
+.leftWrap ul li a.clk{
+	background-color:#fff;
+	color:#000;
+}
